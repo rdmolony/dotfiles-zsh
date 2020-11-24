@@ -148,7 +148,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Add poetry to path if exists
-if [ -f "/home/wsl-rowanm/.poetry]; then
-    export PATH="/home/wsl-rowanm/.poetry/bin:$PATH"
-fi
