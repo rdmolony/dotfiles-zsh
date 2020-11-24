@@ -1,0 +1,25 @@
+alias home='cd /mnt/c/users/rowanm/'
+alias downloads='cd /mnt/c/users/rowanm/downloads'
+alias documents='cd /mnt/c/users/rowanm/documents'
+alias Code='cd /mnt/c/users/rowanm/Code'
+alias vscode-settings='cd /mnt/c/Users/RowanM/AppData/Roaming/Code/User'
+alias open='explorer.exe'
+alias so='stackoverflow'
+
+alias szrc='source ~/.zshrc'
+alias vzal='vim ~/.zsh_aliases'
+alias vzrc='vim ~/.zshrc'
+
+alias nominatim='docker run --restart=always -p 6432:5432 -p 7070:8080 -d --name nominatim -v ~/data/nominatimdata/postgresdata:/var/lib/postgresql/11/main nominatim bash /app/start.sh'
+
+alias ca='conda activate'
+alias ci='conda install'
+alias cui='conda uninstall'
+alias pi='pip install'
+alias pui='pip uninstall'
+
+alias ipy="ipython --no-banner --no-confirm-exit --quick --InteractiveShellApp.exec_lines=\"['import os, sys', 'import pandas as pd', 'import numpy as np', 'import geopandas as gpd', 'from sys import modules', 'from pathlib import Path']\""
+
+alias gumaster="gfa && gco master && gmum && ggpush"
+
+alias jnbook="poetry run jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root"
