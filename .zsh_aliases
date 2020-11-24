@@ -21,5 +21,6 @@ alias pui='pip uninstall'
 alias ipy="ipython --no-banner --no-confirm-exit --quick --InteractiveShellApp.exec_lines=\"['import os, sys', 'import pandas as pd', 'import numpy as np', 'import geopandas as gpd', 'from sys import modules', 'from pathlib import Path']\""
 
 alias gumaster="gfa && gco master && gmum && ggpush"
+alias gumain="gfa && gco main && gmum && ggpush"
 
-alias jnbook="poetry run jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root"
+alias jnbook="jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root"
