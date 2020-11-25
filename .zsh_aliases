@@ -24,3 +24,7 @@ alias gumaster="gfa && gco master && gmum && ggpush"
 alias gumain="gfa && gco main && gmum && ggpush"
 
 alias jnbook="jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root"
+alias jlab="jupyter lab --port=8888 --no-browser --ip=0.0.0.0 --allow-root"
+
+alias jnbook-docker="docker run -p 8888:8888 --rm -v $PWD:/home/joyvan -e GRANT_SUDO=yes jupyter/base-notebook"
+alias jlab-docker="docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --rm -v $PWD:/home/joyvan jupyter/base-notebook"
