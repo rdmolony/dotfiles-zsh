@@ -32,3 +32,9 @@ alias jnbook-clear="jupyter nbconvert --ClearOutputPreprocessor.enabled=True --i
 
 alias jnbook-docker="docker run -p 8888:8888 --rm -v $PWD:/home/joyvan -e GRANT_SUDO=yes jupyter/base-notebook"
 alias jlab-docker="docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -e GRANT_SUDO=yes --rm -v $PWD:/home/joyvan jupyter/base-notebook"
+
+# ------
+# docker
+# ------
+alias dbd="DOCKER_BUILDKIT=1 docker build"
+alias dco="DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker-compose"
