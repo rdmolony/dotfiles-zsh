@@ -38,6 +38,6 @@ alias jlab-docker="docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -e GRANT_SU
 # ------
 alias dbd="DOCKER_BUILDKIT=1 docker build"
 alias dco="DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker-compose"
-alias dex="docker exec"
+alias dex="docker exec -it"
 alias drn="docker run --rm -it"
 alias dcod="DOCKER_BUILDKIT=1 COMPOSE_DOCKER_CLI_BUILD=1 docker-compose -f docker-compose.dev.yml"
