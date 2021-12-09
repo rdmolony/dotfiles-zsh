@@ -135,16 +135,16 @@ export PREFECT__USER_CONFIG_PATH="/drem/prefect-config.toml"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/wsl-rowanm/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/rdmolony/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/wsl-rowanm/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/home/wsl-rowanm/miniforge3/etc/profile.d/conda.sh"
+    if [ -f "/home/rdmolony/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/rdmolony/mambaforge/etc/profile.d/conda.sh"
     else
-        export PATH="/home/wsl-rowanm/miniforge3/bin:$PATH"
+        export PATH="/home/rdmolony/mambaforge/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+conda deactivate
