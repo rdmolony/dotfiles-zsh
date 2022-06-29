@@ -2,6 +2,7 @@ user='rowan.molony'
 alias home="cd /mnt/c/users/${user}/"
 alias downloads="cd '/mnt/c/users/${user}/OneDrive - Mainstream Renewable Power/downloads'"
 alias documents="cd '/mnt/c/users/${user}/OneDrive - Mainstream Renewable Power/documents'"
+alias obsidian="cd '/mnt/c/users/${user}/OneDrive - Mainstream Renewable Power/documents/obsidian vault'"
 alias vscode-settings="cd /mnt/c/Users/${user}/AppData/Roaming/Code/User"
 alias open='explorer.exe'
 alias so='stackoverflow'
