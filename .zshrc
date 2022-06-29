@@ -148,3 +148,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 conda deactivate
+
+if [ -e /home/rdmolony/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rdmolony/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
