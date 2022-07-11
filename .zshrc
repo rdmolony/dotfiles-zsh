@@ -11,6 +11,10 @@ if ! [ -x "$(command -v conda)" ]; then
     curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
     zsh Mambaforge-$(uname)-$(uname -m).sh
 fi
+# Install nix
+if ! [ -x "$(command -v nix)" ]; then
+    sh <(curl -L https://nixos.org/nix/install) --no-daemon
+fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
