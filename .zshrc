@@ -144,8 +144,6 @@ path+=('$HOME/.local/bin')
 path+='/usr/local/bin' # to access brew
 export path
 
-export PREFECT__USER_CONFIG_PATH="/drem/prefect-config.toml"
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/rdmolony/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
