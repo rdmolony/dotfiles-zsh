@@ -149,15 +149,16 @@ export path
 __conda_setup="$('/home/rdmolony/mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
+    conda deactivate
 else
     if [ -f "/home/rdmolony/mambaforge/etc/profile.d/conda.sh" ]; then
         . "/home/rdmolony/mambaforge/etc/profile.d/conda.sh"
     else
         export PATH="/home/rdmolony/mambaforge/bin:$PATH"
+
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-conda deactivate
 
 if [ -e /home/rdmolony/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rdmolony/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
