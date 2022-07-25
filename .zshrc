@@ -1,21 +1,3 @@
-# Install oh-my-zsh
-if ! [ -d "$HOME/.oh-my-zsh" ]; then
-    git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh "$HOME/.oh-my-zsh"
-fi
-# Install powerlevel10k oh-my-zsh theme
-if ! [ -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k ]; then
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-fi
-# Install conda
-if ! [ -d "$HOME/mambaforge" ]; then
-    curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
-    zsh Mambaforge-$(uname)-$(uname -m).sh
-fi
-# Install nix
-if ! [ -d "$HOME/.nix-profile" ]; then
-    sh <(curl -L https://nixos.org/nix/install) --no-daemon
-fi
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
