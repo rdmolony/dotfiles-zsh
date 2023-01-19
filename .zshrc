@@ -155,3 +155,5 @@ unset __conda_setup
 
 if [ -e /home/rdmolony/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rdmolony/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
+# automatically activate virtual envs in directories with `.envrc`
+eval "$(direnv hook zsh)"
