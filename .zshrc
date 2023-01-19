@@ -155,5 +155,3 @@ unset __conda_setup
 
 if [ -e /home/rdmolony/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rdmolony/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
-# Fixes https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported/
-export NODE_OPTIONS=--openssl-legacy-provider
