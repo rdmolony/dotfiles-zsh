@@ -159,3 +159,6 @@ if [ -e /home/rdmolony/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rdmolon
 eval "$(direnv hook zsh)"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# Created by `pipx` on 2023-01-20 17:26:56
+export PATH="$PATH:/home/rdmolony/.local/bin"
