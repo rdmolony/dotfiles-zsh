@@ -157,3 +157,5 @@ if [ -e /home/rdmolony/.nix-profile/etc/profile.d/nix.sh ]; then . /home/rdmolon
 
 # automatically activate virtual envs in directories with `.envrc`
 eval "$(direnv hook zsh)"
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
