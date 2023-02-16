@@ -128,9 +128,6 @@ fi
 # Set custom colors
 LS_COLORS=$LS_COLORS:'di=0;35:ow=01;36;40' ; export LS_COLORS
 
-# Use Windows XcXsrv native X-server so can launch windows within WSL
-export DISPLAY=`grep -oP "(?<=nameserver ).+" /etc/resolv.conf`:0.0
-
 # Add .local to PATH
 path+=('$HOME/.local/bin')
 path+='/usr/local/bin' # to access brew
@@ -162,3 +159,4 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # Created by `pipx` on 2023-01-20 17:26:56
 export PATH="$PATH:/home/rdmolony/.local/bin"
+
