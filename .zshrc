@@ -160,3 +160,5 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Created by `pipx` on 2023-01-20 17:26:56
 export PATH="$PATH:/home/rdmolony/.local/bin"
 
+# Enables `nix` to install `Microsoft ODBC Driver 17 for SQL Server` which is "unfree" software
+export NIXPKGS_ALLOW_UNFREE=1
